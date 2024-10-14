@@ -1,0 +1,27 @@
+---
+const { quote, caption } = Astro.props;
+---
+
+<div class="testimonial">
+  <blockquote class="testimonial__quote">
+    {quote}
+  </blockquote>
+  <p class="testimonial__caption">
+    — {caption}
+  </p>
+</div>
+
+<style lang="scss">
+  .testimonial {
+    &__quote {
+      padding: 0;
+      margin: 0;
+    }
+
+    &__caption {
+      margin: 1rem 0 0;
+      font-size: 0.875em;
+      color: var(--text-secondary);
+    }
+  }
+</style>

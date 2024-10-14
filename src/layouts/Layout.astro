@@ -32,7 +32,7 @@ const { title } = Astro.props;
     <slot />
   </body>
 </html>
-<style is:global>
+<style is:global lang="scss">
   :root {
     --accent: #af5433;
     --accent-hover: #6c3723;
@@ -83,7 +83,7 @@ const { title } = Astro.props;
   h4,
   h5 {
     margin: 0 0 1em;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   h1,
@@ -100,8 +100,18 @@ const { title } = Astro.props;
     text-underline-offset: 0.15em;
   }
 
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   section {
     padding: 2em 0;
+
+    @media (max-height: 700px) {
+      padding: 1.5em 0;
+    }
   }
 
   img {

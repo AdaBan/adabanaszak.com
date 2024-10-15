@@ -34,9 +34,18 @@ const testimonials = [
 
 <Layout title="Testimonials for Ada Banaszak">
   <section>
+    <div class="cta">
+        ← 
+      <a href="/">Go to homepage</a>
+    </div>
+
     <h1>Testimonials</h1>
     <TestimonialsList testimonials={testimonials} />
   </section>
 </Layout>
 
-<style lang="scss"></style>
+<style lang="scss">
+  .cta {
+    margin-bottom: 3rem;
+  }
+</style>

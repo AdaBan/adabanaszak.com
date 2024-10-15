@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import TestimonialsList from "../components/TestimonialsList.astro";
+
+const testimonials = [
+  {
+    quote:
+      "For me, Ada is the first person that comes to mind when UI development is mentioned. It’s a beautiful and complex area, that is rarely well understood, and even less often truly appreciated. This is why I love working with her, because the experience and professionalism she brings to the table is unparalleled. I have my full trust in her abilities, and I can sleep peacefully knowing she’s on the team.",
+    caption: "Maciej Łebkowski, Head of Technology @ Docplanner Phone",
+  },
+  {
+    quote:
+      "Ada has been our primary lead developer at Supermarket for the past year. She is a wonderful member of the team. She is highly skilled in her work. She thinks pragmatically about problems we are facing and then goes about getting a solution collaboratively if needed or on her own if so required. She is always approachable and cheery which means our team and clients all love her. The best thing about her is that she makes those around her perform better. She has infinite time for those developers around her whether beginners or experienced. As a contractor she is always reliable, super contactable, honest and fair in discussions about rates, hours and responsibilities. Hire her.",
+    caption: "William McLean, Managing Director @ Supermarket",
+  },
+  {
+    quote:
+      "Ada is an incredible partner and collaborator! We brought her on to launch our company website and solve development issues from our past developer. What makes Ada unique is her spirit of empathetic collaboration. She was thoughtful in her assessment of our roadmap and provided honest feedback on what was achievable with our constraints. Ada's ability to deliver on time made our team feel at ease with our competitive timelines. In addition, she took the time to outline her process clearly, discuss what potential flags we may hit, and suggest alternate paths we can take. We are extremely happy with how our website has turned out and thankful for Ada's diligent work.",
+    caption: "Genevieve Diaz, Creative Producer @ Even/Odd",
+  },
+  {
+    quote:
+      "We call Ada when we need additional help with front-end development. She's attentive, hard working and great to collaborate with. Her quality of work is fantastic and she fits well within our team. We love working with Ada!",
+    caption: "Ben Everard, Director & Technical Lead @ The Idea Bureau",
+  },
+  {
+    quote:
+      "I hope to have the opportunity to work with Ada again - working with her is a pleasure! She excels at her work with creativity, knows exactly what she wants, what she cares about and pursues the goals she has set for herself. She is able to distinguish what is important, so she prioritizes her work accordingly and is also open to change. Professional, committed, independent and at the same time supportive of others. I am glad that we had the opportunity to get to know each other and work together <3",
+    caption: "Dominika Kędzior, Product Manager @ Your Kaya",
+  },
+];
+---
+
+<Layout title="Testimonials for Ada Banaszak">
+  <section>
+    <h1>Testimonials</h1>
+    <TestimonialsList testimonials={testimonials} />
+  </section>
+</Layout>
+
+<style lang="scss"></style>

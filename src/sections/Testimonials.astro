@@ -1,8 +1,7 @@
 ---
-import Testimonial from "../components/Testimonial.astro";
+import TestimonialsList from "../components/TestimonialsList.astro";
 
 const testimonials = [
-
   {
     quote:
       "For me, Ada is the first person that comes to mind when UI development is mentioned. The experience and professionalism she brings to the table is unparalleled. I have my full trust in her abilities, and I can sleep peacefully knowing she’s on the team.",
@@ -10,7 +9,7 @@ const testimonials = [
   },
   {
     quote:
-      "Ada has been our primary lead developer at Supermarket for the past year. She is a wonderful member of the team. She is highly skilled in her work. She thinks pragmatically about problems we are facing and then goes about getting a solution collaboratively if needed or on her own if so required. As a contractor she is always reliable, super contactable, honest and fair in discussions about rates, hours and responsibilities. Hire her.",
+      "Ada is highly skilled in her work. She thinks pragmatically about problems we are facing and then goes about getting a solution collaboratively if needed or on her own if so required. As a contractor she is always reliable, super contactable, honest and fair in discussions about rates, hours and responsibilities. Hire her.",
     caption: "William McLean, Managing Director @ Supermarket",
   },
   {
@@ -28,19 +27,14 @@ const testimonials = [
 
 <section>
   <h2>What my clients say</h2>
-  <div class="testimonials-list">
-    {
-      testimonials.map(({ quote, caption }) => (
-        <Testimonial quote={quote} caption={caption} />
-      ))
-    }
+  <TestimonialsList testimonials={testimonials} />
+  <div class="cta">
+    <a href="/testimonials">Read full testimonials</a>
   </div>
 </section>
 
 <style lang="scss">
-  .testimonials-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .cta {
+    margin-top: 2.5rem;
   }
 </style>

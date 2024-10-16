@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
 
 interface Props {
@@ -34,6 +35,7 @@ const { title } = Astro.props;
     <div class="container">
       <Navbar />
       <slot />
+      <Footer />
     </div>
   </body>
 </html>
@@ -45,6 +47,7 @@ const { title } = Astro.props;
     --bg-primary: #eeede6;
     --text-primary: #131210;
     --text-secondary: #5c5849;
+    --border-color: #bdbcb6;
   }
 
   html {
@@ -121,7 +124,7 @@ const { title } = Astro.props;
   }
 
   .container {
-    padding: 2em 1rem;
+    padding: 0 1rem;
     max-width: 50ch;
     margin: 0 auto;
   }

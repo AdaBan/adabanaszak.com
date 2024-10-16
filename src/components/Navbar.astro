@@ -2,17 +2,17 @@
   <a class="navbar__logo" href="/">Ada Banaszak</a>
 
   <ul class="navbar__links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/testimonials">Testimonials</a></li>
+    <!-- <li><a href="/now">Now</a></li> -->
+    <li><a href="/#contact">Contact</a></li>
   </ul>
 </nav>
 
 <style lang="scss">
   .navbar {
     display: flex;
-    gap: 1.5em;
+    gap: 2em;
     justify-content: space-between;
-    padding-bottom: 2rem;
+    padding: 2.5rem 0 1rem;
 
     &__logo {
       text-decoration: none;
@@ -21,14 +21,10 @@
 
     &__links {
       display: flex;
-      gap: 1.5em;
+      gap: 1em;
       list-style-type: none;
       padding: 0;
       margin: 0;
-
-      a:not(:hover) {
-        text-decoration: none;
-      }
     }
   }
 </style>
